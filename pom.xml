@@ -6,6 +6,9 @@
     <groupId>org.springframework</groupId>
     <artifactId>gs-spring-boot</artifactId>
     <version>0.1.0</version>
+    <packaging>war</packaging>
+    <name>hello</name>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -54,6 +57,20 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+         <groupId>org.apache.tomcat.maven</groupId>
+         <artifactId>tomcat7-maven-plugin</artifactId>
+         <version>2.2</version>
+         <configuration>
+         <server>tomcat-development-server</server>
+         <url>http://144.38.193.251:8080/manager/text</url>
+         <warFile>target\petclinic.war</warFile>
+         <path>/petclinic</path>
+         <username>admin</username>
+        <password>cloud@123</password>
+         </configuration>
+     </plugin>  
+
         </plugins>
     </build>
 
