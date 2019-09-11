@@ -64,8 +64,8 @@
          <configuration>
          <server>tomcat-development-server</server>
          <url>http://144.38.193.251:8080/manager/text</url>
-         <warFile>target\petclinic.war</warFile>
-         <path>/petclinic</path>
+         <warFile>target\hello.war</warFile>
+         <path>/hello</path>
          <username>admin</username>
         <password>cloud@123</password>
          </configuration>
