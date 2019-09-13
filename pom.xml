@@ -41,6 +41,8 @@
     </properties>
 
     <build>
+            <finalName>hello</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
